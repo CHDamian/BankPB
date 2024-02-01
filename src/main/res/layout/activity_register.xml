@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Imie -->
+    <EditText
+        android:id="@+id/etFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Imię"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Nazwisko -->
+    <EditText
+        android:id="@+id/etLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nazwisko"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Numer konta -->
+    <EditText
+        android:id="@+id/etAccountNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Numer konta (26 cyfr)"
+        android:inputType="number"
+        android:maxLength="26"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- PIN -->
+    <EditText
+        android:id="@+id/etPIN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="PIN (4 cyfry)"
+        android:inputType="numberPassword"
+        android:maxLength="4"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Informacja -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stworzenie konta wykasuje wszystkie inne konta w aplikacji"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Przycisk "Stwórz" -->
+    <Button
+        android:id="@+id/btnCreateAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stwórz"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

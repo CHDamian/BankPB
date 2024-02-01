@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kalkulator walut"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/editTextValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Wprowadź liczbę"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/buttonConvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Przelicz"
+        android:layout_marginTop="16dp"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center">
+
+        <TableRow android:weightSum="3" android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nom."
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@drawable/table_cell_border"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Kurs"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@drawable/table_cell_border"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Wartość"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="@drawable/table_cell_border"/>
+        </TableRow>
+
+        <TableRow android:weightSum="3" android:gravity="center">
+            <TextView
+                android:id="@+id/textViewNominalUSD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="USD"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:background="@drawable/table_cell_border"/>
+            <TextView
+                android:id="@+id/textViewRateUSD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0.0"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:background="@drawable/table_cell_border"/>
+            <TextView
+                android:id="@+id/textViewValueUSD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0.0"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:background="@drawable/table_cell_border"/>
+        </TableRow>
+
+        <TableRow android:weightSum="3" android:gravity="center">
+            <TextView
+                android:id="@+id/textViewNominalEUR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="EUR"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:background="@drawable/table_cell_border"/>
+            <TextView
+                android:id="@+id/textViewRateEUR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0.0"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:background="@drawable/table_cell_border"/>
+            <TextView
+                android:id="@+id/textViewValueEUR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0.0"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:background="@drawable/table_cell_border"/>
+        </TableRow>
+
+        <TableRow android:weightSum="3" android:gravity="center">
+            <TextView
+                android:id="@+id/textViewNominalJPY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="JPY"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:background="@drawable/table_cell_border"/>
+            <TextView
+                android:id="@+id/textViewRateJPY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0.0"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:background="@drawable/table_cell_border"/>
+            <TextView
+                android:id="@+id/textViewValueJPY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0.0"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:background="@drawable/table_cell_border"/>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
